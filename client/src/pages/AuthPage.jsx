@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import axios from "../axios/axios";
 import Cookies from "js-cookie";
@@ -20,6 +20,7 @@ export const AuthPage = () => {
         password,
       });
       const { token, user } = res.data;
+      console.log("Token ", token, "User", user);
       Cookies.set("jwtToken", token, {
         expires: 7,
         path: "/chat",
@@ -32,7 +33,7 @@ export const AuthPage = () => {
         expires: 7,
         path: "/chat",
       });
-      navigate("chat");
+      navigate("/chat");
     } catch (error) {
       const err = error.response.data.message;
       console.log(err);

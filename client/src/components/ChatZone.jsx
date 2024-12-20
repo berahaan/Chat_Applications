@@ -3,6 +3,7 @@ import InputBox from "./InputBox";
 const ChatZone = ({ chat, sendMessage, setMessage, currentUser, message }) => {
   return (
     <div className="chat-container">
+      <span>Here is chat zones</span>
       <div className="chat-wrapper">
         {chat.map((msg) => {
           return (
@@ -16,9 +17,7 @@ const ChatZone = ({ chat, sendMessage, setMessage, currentUser, message }) => {
                 <div className="message-text">{msg.text}</div>
                 <div className="message-info">
                   <div className="user">
-                    {msg.sender_username === currentUser
-                      ? "You"
-                      : msg.sender_username}
+                    {msg.sender_username === currentUser ? "You" : ""}
                   </div>
                 </div>
               </div>

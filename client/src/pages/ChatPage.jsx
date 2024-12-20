@@ -15,13 +15,13 @@ export const ChatPage = () => {
   const [message, setMessage] = useState("");
   const [onlineUsers, setOnlineUsers] = useState([]);
   const token = Cookies.get("jwtToken");
-
   const fetchChat = async () => {
     const { data } = await axios.get("chat/getChat", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     });
+    console.log("Data fetched for chat users here is ", data.chat);
     setChat(data.chat);
   };
 

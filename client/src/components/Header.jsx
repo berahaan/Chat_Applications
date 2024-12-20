@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <nav>
       <h2>
-        Chat.<span style={{ color: "#fa541c" }}>io</span>
+        Chatme.<span style={{ color: "#fa541c" }}>io</span>
       </h2>
       <div className="logout" onClick={logoutHandler}>
         <input
