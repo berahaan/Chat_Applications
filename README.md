@@ -1,4 +1,4 @@
-# Chat.io - Real-Time Chat App
+# Chatme.io - Real-Time Chat App
 
 This repository contains the source code for chat.io, a real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO. The app allows users to engage in live chat conversations, displays online users, and features a modern and simple design that is responsive across all devices.
 
@@ -57,16 +57,4 @@ The project structure is organized as follows:
 - `client`: Contains the React frontend code.
 - `server`: Contains the Node.js and Express backend code.
 - `socket`: Contains the Socket.io configuration.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- [Socket.IO](https://socket.io/)
-- [Create vite@latest](https://vitejs.dev/guide/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-
-Enjoy using Chat.io!
+Enjoy using Chatme.io!
